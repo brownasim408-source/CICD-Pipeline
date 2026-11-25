@@ -1,0 +1,12 @@
+name: CoderCo CICD workflow
+
+on: [push]
+
+jobs:
+  build:
+   runs-on: ubunu-latest
+   steps:
+   - name: checkout CoderCo
+     uses: actions/checkout@v2
+   - name: we are testig this workflow
+     run: echo Hello everyone!
